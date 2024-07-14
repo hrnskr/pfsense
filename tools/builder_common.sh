@@ -1037,7 +1037,7 @@ setup_pkg_repo() {
 	sed \
 		-e "s/%%ARCH%%/${_target_arch}/" \
         -e "s/%%OSVERSION%%/${GIT_REPO_BRANCH_OR_TAG}/" \
-        -e "s/%%VERSION%%/${POUDRIERE_PORTS_BRANCH}/" \		
+        -e "s/%%VERSION%%/${POUDRIERE_PORTS_BRANCH}/" \
 		-e "s/%%MIRROR_TYPE%%/${_mirror_type}/" \
 		-e "s/%%PKG_REPO_BRANCH_DEVEL%%/${_pkg_repo_branch_devel}/g" \
 		-e "s/%%PKG_REPO_BRANCH_RELEASE%%/${_pkg_repo_branch_release}/g" \
