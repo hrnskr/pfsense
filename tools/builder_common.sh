@@ -1614,7 +1614,7 @@ poudriere_rename_ports() {
 				  -e "s,pfSense_module_entry,${PRODUCT_NAME}_module_entry,g" \
 				  -e "s,php_pfSense.h,php_${PRODUCT_NAME}\.h,g" \
                   -e "s,pfSense_arginfo.h,${PRODUCT_NAME}_arginfo\.h,g" \
-                  -e "s,pfSense_private.h,${PRODUCT_NAME}_private\.h,g" \				  
+                  -e "s,pfSense_private.h,${PRODUCT_NAME}_private\.h,g" \
 				  -e "/ZEND_GET_MODULE/ s,pfSense,${PRODUCT_NAME}," \
 				  -e "/PHP_PFSENSE_WORLD_EXTNAME/ s,pfSense,${PRODUCT_NAME}," \
 				${_pdir}/${_pname}/files/pfSense.c \
